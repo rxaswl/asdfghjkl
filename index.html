@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>공동교육과정</title>
+    <style>
+        /* 기본 배경 및 글자색 (검은색 테마) */
+        body {
+            background-color: #121212;
+            color: #e0e0e0;
+            font-family: 'Malgun Gothic', 'Apple SD Gothic Neo', sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        /* 상단 헤더 영역 */
+        header {
+            background-color: #000000;
+            padding: 50px 20px;
+            text-align: center;
+            border-bottom: 1px solid #333333;
+        }
+
+        header h1 {
+            margin: 0 0 10px 0;
+            font-size: 2.2rem;
+            color: #ffffff;
+        }
+
+        header p {
+            margin: 0;
+            color: #aaaaaa;
+            font-size: 1rem;
+            word-break: keep-all;
+        }
+
+        /* 카드 목록 컨테이너 (반응형) */
+        .container {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        /* 개별 카드 디자인 */
+        .card {
+            background-color: #1e1e1e;
+            border: 1px solid #333333;
+            border-radius: 10px;
+            padding: 25px;
+            text-decoration: none;
+            color: inherit;
+            display: flex;
+            flex-direction: column;
+            transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+        }
+
+        /* 카드 마우스 오버 효과 */
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(255, 255, 255, 0.05);
+            border-color: #666666;
+        }
+
+        .card h2 {
+            margin: 0 0 10px 0;
+            font-size: 1.25rem;
+            color: #ffffff;
+            word-break: keep-all;
+        }
+
+        .card .file-name {
+            display: inline-block;
+            background-color: #333333;
+            color: #64b5f6;
+            font-size: 0.8rem;
+            padding: 4px 8px;
+            border-radius: 4px;
+            margin-bottom: 15px;
+            align-self: flex-start;
+            font-family: monospace;
+        }
+
+        .card p {
+            margin: 0;
+            color: #999999;
+            font-size: 0.95rem;
+            flex-grow: 1;
+            word-break: keep-all;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>공동교육과정</h1>
+        <p>공동교육과정에서 데이터 분석 및 시각화를 주제로 탐구한 수행평가 프로젝트 모음입니다.</p>
+    </header>
+
+    <main class="container">
+        <!-- 첫 번째 작품 카드 -->
+        <a href="pdf/pokemon-data-analysis.pdf" target="_blank" class="card">
+            <h2>CODAP 포켓몬 데이터 분석 프로젝트</h2>
+            <span class="file-name">pokemon-data-analysis.pdf</span>
+            <p>게임 밸런싱을 위한 포켓몬 스탯 데이터 분포 및 설계 패턴을 분석한 결과물입니다.</p>
+        </a>
+
+        <!-- 두 번째 작품 카드 -->
+        <a href="pdf/public-data-visualization.pdf" target="_blank" class="card">
+            <h2>공공데이터 시각화 프로젝트</h2>
+            <span class="file-name">public-data-visualization.pdf</span>
+            <p>동아시아 컴퓨터 보유 가구 비율(2002-2017) 데이터 시각화를 통해 선진국과 개발도상국 간 디지털 격차 현황을 분석했습니다.</p>
+        </a>
+
+        <!-- 세 번째 작품 카드 -->
+        <a href="pdf/linear-regression-exploration.pdf" target="_blank" class="card">
+            <h2>Orange3 선형 회귀 실습 보고서</h2>
+            <span class="file-name">linear-regression-exploration.pdf</span>
+            <p>우리나라 소프트웨어 산업 성장에 따른 IT 일자리 수요 예측을 위해 선형 회귀 예측 모델을 탐구했습니다.</p>
+        </a>
+    </main>
+
+</body>
+</html>
